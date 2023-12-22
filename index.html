@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR G1SHE | JEEVANSHI</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    div img {
+        width: 100vw;
+    }
+    body {
+        text-align: center;
+        font-family: sans-serif;
+    }
+    #buttons {
+        height: 120px;
+        width: 200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+    button {
+        background-color: pink;
+        height: 50px;
+        width: 200px;
+        font-size: x-large;
+        position: relative;
+        border-radius: 25px;
+        border: 0;
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    #no:hover {
+        display: hidden;
+    }
+</style>
+<body>
+    <div>
+        <img src="main.jpg" alt="image">
+        <h1><strong>WILL YOU DATE ME??</strong></h1>
+        <div id="buttons">
+            <button id="yes"><a href="yes.html">YES</a></button>
+            <button id="no" onclick="hide()">NO</button>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById('no');
+        const he = document.getElementById("buttons")
+        btn.addEventListener('click', () => {
+        // 👇️ hide button
+        btn.style.display = 'none';
+        he.style.height = '50px'
+        });
+    </script>
+</body>
+</html>
